@@ -91,53 +91,66 @@ ob_start();
 
 <!-- Carousel & System Modules -->
 <div class="row g-4 mb-4">
-    <!-- Featured Device Carousel -->
+    <!-- Featured Device Carousel with Real Photos -->
     <div class="col-lg-7">
         <div class="card shadow-sm border-0 h-100">
             <div class="card-header bg-white border-bottom py-3">
                 <h5 class="card-title mb-0">
-                    <i class="bi bi-stars text-warning me-2"></i>Featured E-Paper Hardware
+                    <i class="bi bi-stars text-warning me-2"></i>Featured E-Readers &amp; Tablets
                 </h5>
             </div>
-            <div class="card-body p-4">
+            <div class="card-body p-3">
                 <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
-                    <div class="carousel-inner rounded-3 bg-dark text-white p-4" style="min-height: 240px;">
-                        <div class="carousel-item active text-center py-4">
-                            <span class="badge bg-primary mb-2">Amazon Kindle</span>
-                            <h3 class="fw-bold">Kindle Scribe 10.2"</h3>
-                            <p class="text-white-50 px-md-5">
-                                First Kindle that includes a digital notebook and pen. Read and write thoughts in books or a dedicated notebook without distractions.
-                            </p>
-                            <div class="fw-bold text-info fs-5">RM339.99 · 300 ppi Glare-Free</div>
+                    <div class="carousel-inner rounded-3 bg-light text-dark p-3" style="min-height: 280px;">
+                        <div class="carousel-item active text-center py-2">
+                            <img src="images/P001.jpg" alt="Kindle Paperwhite (11th Gen)" class="img-fluid rounded mb-2" style="max-height: 170px; object-fit: contain;">
+                            <div>
+                                <span class="badge bg-primary mb-1">Amazon Kindle</span>
+                                <h5 class="fw-bold mb-1">Kindle Paperwhite (11th Gen)</h5>
+                                <p class="text-muted small mb-1">6.8" 300 ppi glare-free display with adjustable warm light.</p>
+                                <span class="fw-bold text-primary">RM649.00</span>
+                            </div>
                         </div>
-                        <div class="carousel-item text-center py-4">
-                            <span class="badge bg-success mb-2">reMarkable</span>
-                            <h3 class="fw-bold">reMarkable 2 Paper Tablet</h3>
-                            <p class="text-white-50 px-md-5">
-                                The world's thinnest tablet at just 4.7mm. Replace your paper notebooks, printouts, and documents with paper-like digital writing feel.
-                            </p>
-                            <div class="fw-bold text-info fs-5">RM299.00 · Canvas Display Tech</div>
+                        <div class="carousel-item text-center py-2">
+                            <img src="images/P002.jpg" alt="Kobo Clara Colour" class="img-fluid rounded mb-2" style="max-height: 170px; object-fit: contain;">
+                            <div>
+                                <span class="badge bg-success mb-1">Kobo</span>
+                                <h5 class="fw-bold mb-1">Kobo Clara Colour</h5>
+                                <p class="text-muted small mb-1">6" E-Ink Kaleido 3 full-color display with ComfortLight PRO.</p>
+                                <span class="fw-bold text-success">RM749.00</span>
+                            </div>
                         </div>
-                        <div class="carousel-item text-center py-4">
-                            <span class="badge bg-danger mb-2">Onyx Boox</span>
-                            <h3 class="fw-bold">BOOX Note Air 3C (Color)</h3>
-                            <p class="text-white-50 px-md-5">
-                                Full-color Kaleido 3 E-Ink screen running open Android 12 with Google Play Store support, dual-touch control, and handwriting recognition.
-                            </p>
-                            <div class="fw-bold text-info fs-5">RM499.99 · Kaleido 3 Color E-Ink</div>
+                        <div class="carousel-item text-center py-2">
+                            <img src="images/P003.jpg" alt="reMarkable Paper Tablet" class="img-fluid rounded mb-2" style="max-height: 170px; object-fit: contain;">
+                            <div>
+                                <span class="badge bg-dark mb-1">reMarkable</span>
+                                <h5 class="fw-bold mb-1">reMarkable Paper Tablet</h5>
+                                <p class="text-muted small mb-1">10.3" digital paper display with Marker stylus and pen-on-paper feel.</p>
+                                <span class="fw-bold text-primary">RM1,899.00</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center py-2">
+                            <img src="images/P004.jpg" alt="Kobo Libra Colour" class="img-fluid rounded mb-2" style="max-height: 170px; object-fit: contain;">
+                            <div>
+                                <span class="badge bg-info mb-1 text-white">Kobo</span>
+                                <h5 class="fw-bold mb-1">Kobo Libra Colour</h5>
+                                <p class="text-muted small mb-1">7" color screen with page-turn buttons and stylus notebook support.</p>
+                                <span class="fw-bold text-primary">RM1,099.00</span>
+                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-secondary rounded-circle p-2" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-secondary rounded-circle p-2" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>

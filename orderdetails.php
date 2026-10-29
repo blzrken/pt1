@@ -39,12 +39,12 @@ ob_start();
                     <label for="product_num" class="form-label">Product <span class="text-danger" aria-hidden="true">*</span></label>
                     <select name="product_num" id="product_num" class="form-select" required>
                         <option value="">Select Product</option>
-                        <option value="P001">P001 - Kindle Scribe 10.2" (Stock = 14)</option>
-                        <option value="P002">P002 - Kobo Elipsa 2E 10.3" (Stock = 8)</option>
-                        <option value="P003">P003 - BOOX Note Air 3C Color (Stock = 12)</option>
-                        <option value="P004">P004 - reMarkable 2 Paper Tablet (Stock = 20)</option>
-                        <option value="P005">P005 - Supernote Nomad A6 X2 (Stock = 15)</option>
-                        <option value="P006">P006 - PocketBook InkPad Color 3 (Stock = 9)</option>
+                        <option value="P001">P001 - Kindle Paperwhite (11th Gen) (Stock = 14)</option>
+                        <option value="P002">P002 - Kobo Clara Colour (Stock = 8)</option>
+                        <option value="P003">P003 - reMarkable Paper Tablet (Stock = 12)</option>
+                        <option value="P004">P004 - Kobo Libra Colour (Stock = 10)</option>
+                        <option value="P005">P005 - Sony Reader PRS-T2 (Stock = 5)</option>
+                        <option value="P020">P020 - reMarkable 2 Paper Tablet (Stock = 6)</option>
                     </select>
                 </div>
                 <div class="col-md-4">
@@ -79,10 +79,10 @@ ob_start();
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Kindle Scribe 10.2"</strong></td>
-                        <td>$339.99</td>
+                        <td><strong>Kindle Paperwhite (11th Gen)</strong></td>
+                        <td>RM649.00</td>
                         <td>1</td>
-                        <td>$339.99</td>
+                        <td>RM649.00</td>
                         <td>
                             <a href="#" class="btn btn-sm btn-warning" title="Edit"><i class="bi bi-pencil"></i></a>
                             <a href="#" class="btn btn-sm btn-danger" title="Delete"><i class="bi bi-trash"></i></a>
@@ -90,9 +90,9 @@ ob_start();
                     </tr>
                     <tr>
                         <td><strong>reMarkable 2 Paper Tablet</strong></td>
-                        <td>$299.00</td>
+                        <td>RM2,199.00</td>
                         <td>1</td>
-                        <td>$299.00</td>
+                        <td>RM2,199.00</td>
                         <td>
                             <a href="#" class="btn btn-sm btn-warning" title="Edit"><i class="bi bi-pencil"></i></a>
                             <a href="#" class="btn btn-sm btn-danger" title="Delete"><i class="bi bi-trash"></i></a>
@@ -102,7 +102,7 @@ ob_start();
                 <tfoot>
                     <tr>
                         <th colspan="3" class="text-end">Grand Total</th>
-                        <th>$638.99</th>
+                        <th>RM2,848.00</th>
                         <th></th>
                     </tr>
                 </tfoot>
