@@ -1,25 +1,21 @@
-<?php
-ob_start();
-?>
+<?php ob_start(); ?>
 
 <div class="card shadow border-0 border-start border-5 border-primary mb-4">
     <div class="card-body">
         <h2 class="mb-1">Staffs</h2>
-        <p class="text-muted mb-0">Manage staff members and administrative access</p>
+        <p class="text-muted mb-0">Manage staff records</p>
     </div>
 </div>
 
 <div class="card shadow-sm mb-4">
     <div class="card-body">
-
         <!-- Form Header -->
         <div class="row g-0 align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
-                    <i class="bi bi-person-badge text-primary me-2"></i>
-                    Staff Form
+                    <i class="bi bi-pencil-square text-primary me-2"></i> Staff Form
                 </h5>
-                <small class="text-muted">Enter employee credentials and contact information</small>
+                <small class="text-muted">Fill in the details of a staff</small>
             </div>
             <div class="col-auto">
                 <span class="badge bg-primary">* Required fields</span>
@@ -30,26 +26,22 @@ ob_start();
 
         <form action="" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
-                <div class="col-md-3">
-                    <label for="staff_num" class="form-label">Staff ID <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="staff_num" id="staff_num" type="text" class="form-control" placeholder="Enter Staff ID" value="" required>
+                <div class="col-md-4">
+                    <label for="sid" class="form-label">Staff ID <span class="text-danger" aria-hidden="true">*</span></label>
+                    <input name="staff_num" id="sid" type="text" class="form-control" placeholder="Enter Staff ID" value="" required>
                 </div>
-                <div class="col-md-3">
-                    <label for="staff_name" class="form-label">Name <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="staff_name" id="staff_name" type="text" class="form-control" placeholder="Enter Staff Name" value="" required>
+                <div class="col-md-4">
+                    <label for="sname" class="form-label">Name <span class="text-danger" aria-hidden="true">*</span></label>
+                    <input name="staff_name" id="sname" type="text" class="form-control" placeholder="Enter Staff Name" value="" required>
                 </div>
-                <div class="col-md-3">
-                    <label for="staff_phone" class="form-label">Phone Number <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="staff_phone" id="staff_phone" type="text" class="form-control" placeholder="Enter Phone Number" value="" required>
-                </div>
-                <div class="col-md-3">
-                    <label for="staff_email" class="form-label">Email Address <span class="text-danger" aria-hidden="true">*</span></label>
-                    <input name="staff_email" id="staff_email" type="email" class="form-control" placeholder="Enter Email Address" value="" required>
+                <div class="col-md-4">
+                    <label for="sphone" class="form-label">Phone Number <span class="text-danger" aria-hidden="true">*</span></label>
+                    <input name="staff_phone" id="sphone" type="text" class="form-control" placeholder="Enter Phone Number" value="" required>
                 </div>
             </div>
-            
+
             <hr class="mt-4 mb-3">
-            
+
             <div>
                 <button type="submit" name="create" class="btn btn-primary">
                     <i class="bi bi-save me-1"></i>Create
@@ -64,89 +56,46 @@ ob_start();
 
 <div class="card shadow-sm">
     <div class="card-body">
- 
         <div class="row align-items-center mb-3">
             <div class="col">
                 <h5 class="mb-0">
-                    <i class="bi bi-person-lines-fill text-primary me-2"></i>
-                    Staff List
+                    <i class="bi bi-table text-primary me-2"></i> Staff List
                 </h5>
-                <small class="text-muted">Registered administrative and sales staff</small>
+                <small class="text-muted">View and manage all staffs</small>
             </div>
             <div class="col-auto">
-                <span class="badge bg-success">Total: 4 items</span>
+                <span class="badge bg-success">Total: 1 items</span>
             </div>
         </div>
 
         <hr>
 
         <div class="table-responsive">
-            <table class="table table-striped table-hover align-middle">
+            <table class="table table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
                         <th>Staff ID</th>
                         <th>Name</th>
                         <th>Phone Number</th>
-                        <th>Email Address</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>S001</strong></td>
+                        <td>S001</td>
                         <td>Jane Smith</td>
                         <td>011-2345678</td>
-                        <td>janesmith@example.com</td>
                         <td>
-                            <a href="#" class="btn btn-sm btn-warning" title="Edit">
+                            <a href="#" class="btn btn-sm btn-warning">
                                 <i class="bi bi-pencil"></i>
                             </a>
-                            <a href="#" class="btn btn-sm btn-danger" title="Delete">
+                            <a href="#" class="btn btn-sm btn-danger">
                                 <i class="bi bi-trash"></i>
                             </a>
                         </td>
                     </tr>
                     <tr>
-                        <td><strong>S002</strong></td>
-                        <td>Ahmad Faizal</td>
-                        <td>014-7654321</td>
-                        <td>ahmad.faizal@omniread.com</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-warning" title="Edit">
-                                <i class="bi bi-pencil"></i>
-                            </a>
-                            <a href="#" class="btn btn-sm btn-danger" title="Delete">
-                                <i class="bi bi-trash"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>S003</strong></td>
-                        <td>Emily Chen</td>
-                        <td>016-9988771</td>
-                        <td>emily.chen@omniread.com</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-warning" title="Edit">
-                                <i class="bi bi-pencil"></i>
-                            </a>
-                            <a href="#" class="btn btn-sm btn-danger" title="Delete">
-                                <i class="bi bi-trash"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>S004</strong></td>
-                        <td>Muhammad Lutfil Hadi</td>
-                        <td>017-3344556</td>
-                        <td>a223536@siswa.ukm.my</td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-warning" title="Edit">
-                                <i class="bi bi-pencil"></i>
-                            </a>
-                            <a href="#" class="btn btn-sm btn-danger" title="Delete">
-                                <i class="bi bi-trash"></i>
-                            </a>
-                        </td>
+                        <td colspan="4" class="text-center">No staffs found</td>
                     </tr>
                 </tbody>
             </table>
@@ -155,6 +104,6 @@ ob_start();
 </div>
 
 <?php 
-$content = ob_get_clean();
-require_once 'layout.php';
+$content = ob_get_clean(); 
+require_once 'layout.php'; 
 ?>
