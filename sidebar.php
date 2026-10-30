@@ -13,6 +13,11 @@
         </a>
       </li>
       <li class="nav-item mb-3">
+        <a href="home.php" class="text-decoration-none text-white">
+          <i class="bi bi-bar-chart-line-fill me-2"></i> Dashboard
+        </a>
+      </li>
+      <li class="nav-item mb-3">
         <a href="products.php" class="text-decoration-none text-white">
           <i class="bi bi-tablet me-2"></i> Products
         </a>
