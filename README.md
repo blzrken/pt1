@@ -1,70 +1,36 @@
-# OmniRead Systems — TTTM2113 Project Task 1 (PT1)
+# OmniRead Systems | TTTM2113 Project Task 1 (PT1)
 
-> **Course**: TTTM2113 Web Development  
-> **Student Name**: Muhammad Lutfil Hadi bin Mohd Azian  
-> **Matric No**: A223536  
-> **System Name**: OmniRead Systems (E-Readers & Digital Paper Tablets)
+OmniRead Systems is a responsive administration prototype for an e-reader and digital paper tablet retailer. PT1 uses sample records and PHP templates to demonstrate the interface. The forms do not save changes, and no database is required. The database-backed implementation is available in [Project Task 2](https://github.com/blzrken/pt2).
 
----
+**Course** · TTTM2113 Web Development, Universiti Kebangsaan Malaysia (UKM)
 
-## 📌 Project Overview
-**OmniRead Systems** is a modern, responsive back-office administrative portal developed for an enterprise retailer specializing in premium E-Readers and Digital Paper Tablets.
+**Student** · Muhammad Lutfil Hadi bin Mohd Azian (A223536)
 
-This project delivers **Project Task 1 (PT1)** for the course **TTTM2113 Web Development**, establishing the core HTML5/CSS3 frontend architecture, responsive layout grid, component hierarchy, and navigation workflows using **Bootstrap 5** and **Poppins** typography.
+[Open the live PT1 demo on LRGS](http://lrgs.ftsm.ukm.my/users/a223536/pt1/home.php)
 
----
+## Pages
 
-## 🚀 Key Modules & Pages
+| Page | What it shows |
+| --- | --- |
+| [Dashboard](home.php) | Sample summary counts, featured products, and shortcuts to the main pages |
+| [Products](products.php) | A 20-product catalog, a sample product form, and image previews |
+| [Customers](customers.php) | A sample customer form and records with names, gender, and phone numbers |
+| [Staff](staffs.php) | A sample staff form and records with staff IDs, names, and phone numbers |
+| [Orders](orders.php) | A sample order form, order records, and links to the order details and invoice pages |
+| [Order details](orderdetails.php) | A sample add-product form, line items, quantities, and an order total |
+| [Invoice](invoice.php) | An itemized sample invoice with a grand total and a print button |
 
-1. **Dashboard & Overview (`home.php`)**
-   - KPI metrics (Catalog Products, Active Clients, Team Members, Completed Orders)
-   - Quick navigation shortcuts & developer verification banner
-   - Recent orders overview & warehouse status indicators
+The pages share a PHP layout with a responsive sidebar. The interface uses Bootstrap 5.3.0-alpha3, Bootstrap Icons 1.13.1, and the Poppins font.
 
-2. **Product Catalog (`products.php`)**
-   - Comprehensive table listing e-reader models, specifications, price, and stock levels
-   - Bootstrap modals for Creating New Products, Editing Details, and Image Previews
+## Run locally
 
-3. **Customer Management (`customers.php`)**
-   - Client records with contact info, shipping addresses, and account creation modals
+1. From your PHP server’s document root (Laragon `www` or XAMPP `htdocs`), clone the repository.
 
-4. **Staff Administration (`staffs.php`)**
-   - Team listings with role assignments (Admin, Inventory Manager, Sales Lead)
-
-5. **Sales Order Processing (`orders.php` & `orderdetails.php`)**
-   - Order history tracking with fulfillment badges and itemized line-item views
-
-6. **Printable Invoice (`invoice.php`)**
-   - Formal customer invoice layout with subtotal, tax calculation, and print-ready CSS
-
-7. **Responsive Master Layout (`header.php`, `sidebar.php`, `footer.php`, `layout.php`)**
-   - Fixed desktop sidebar with collapsible offcanvas navigation for mobile screens
-   - Unified Google Fonts (Poppins) and Bootstrap Icons styling
-
----
-
-## 🛠️ Tech Stack
-- **HTML5 & CSS3**
-- **Bootstrap 5.3.0-alpha3** (Grid system, Offcanvas, Modals, Cards, Tables, Badges)
-- **Bootstrap Icons 1.13.1**
-- **Google Fonts (Poppins)**
-- **PHP 8** (Modular layout templating via `require_once`)
-
----
-
-## 💻 Local Setup & Running
-1. Clone the repository into your local server root (e.g., Laragon `/www/` or XAMPP `/htdocs/`):
    ```bash
    git clone https://github.com/blzrken/pt1.git
    ```
-2. Start Apache/PHP in Laragon or XAMPP.
-3. Open in your browser:
-   ```
-   http://localhost/pt1/home.php
-   ```
 
----
+2. Start Apache with PHP enabled.
+3. Open [http://localhost/pt1/home.php](http://localhost/pt1/home.php).
 
-## 📄 License & Attribution
-Academic coursework submission for **Universiti Kebangsaan Malaysia (UKM)** — Faculty of Information Science & Technology (FTSM).  
-Developed by **Muhammad Lutfil Hadi bin Mohd Azian (A223536)**.
+Bootstrap, Bootstrap Icons, and Poppins load from external CDNs.
